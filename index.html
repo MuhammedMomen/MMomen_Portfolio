@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Mido | Lead ERP Financial Consultant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: 'var(--bg-primary)',
+              surface: 'var(--bg-surface)',
+              primary: 'var(--color-primary)',
+              secondary: 'var(--color-secondary)',
+              textPrimary: 'var(--text-primary)',
+              textSecondary: 'var(--text-secondary)',
+              borderSubtle: 'var(--border-subtle)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'Noto Kufi Arabic', 'sans-serif'],
+              heading: ['IBM Plex Sans', 'Noto Kufi Arabic', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      :root {
+        /* Light Mode Defaults */
+        --bg-primary: #F8FAFC; /* Slate 50 */
+        --bg-surface: #FFFFFF;
+        --text-primary: #0F172A; /* Slate 900 */
+        --text-secondary: #64748B; /* Slate 500 */
+        --border-subtle: #E2E8F0; /* Slate 200 */
+        --color-primary: #2563EB; /* Blue 600 */
+        --color-secondary: #16A34A; /* Green 600 */
+      }
+
+      .dark {
+        /* Dark Mode Defaults */
+        --bg-primary: #0E1117;
+        --bg-surface: #161B22;
+        --text-primary: #E6EDF3;
+        --text-secondary: #9BA4B5;
+        --border-subtle: #232A36;
+        --color-primary: #3B82F6;
+        --color-secondary: #22C55E;
+      }
+
+      /* Custom scrollbar hiding for cleaner mobile UI */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      body {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        overflow: hidden; /* Prevent body scroll, handle internally */
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
