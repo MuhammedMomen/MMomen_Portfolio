@@ -91,15 +91,93 @@ const DATA_EN: AppContent = {
       // --- AI ---
       {
         id: 'ai-1',
-        title: "Agentic Invoice Processor",
+        title: "FatooraX - Agentic Invoice Processor",
         category: ProjectCategory.AI,
-        techStack: ["Computer Vision", "CrewAI", "Vector Search"],
+        techStack: ["Computer Vision", "CrewAI", "Vector Search", "FastAPI"],
         description: "Smart tool using AI vision models to extract and validate data from hardcopy invoices.",
-        longDescription: "A cutting-edge solution that applies agentic AI techniques to verify invoice amounts through logic checks. It implements multi-layered matching (fuzzy logic, semantic vector search) to validate data against database records with configurable acceptance thresholds.",
+        longDescription: "A cutting-edge solution (FatooraX) that applies agentic AI techniques to verify invoice amounts through logic checks. It implements multi-layered matching (fuzzy logic, semantic vector search) to validate data against database records with configurable acceptance thresholds.",
         outcome: "Automated error-checking and data entry for physical invoices.",
         images: [
           "https://images.unsplash.com/photo-1633419461186-7d75076e82d7?q=80&w=800&auto=format&fit=crop", 
           "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-6',
+        title: "AI Theme Manager",
+        category: ProjectCategory.AI,
+        techStack: ["Python", "Flet", "Gemini 2.0", "LangChain"],
+        description: "Real-time AI-driven design system for instant UI theming.",
+        longDescription: "A sophisticated project bridging static UI styling and dynamic, AI-orchestrated environments. It allows an AI agent to generate and apply complex application themes (colors, typography, spatial design) in real-time, effectively allowing the AI to 'redesign' itself based on context.",
+        outcome: "Enabled real-time, context-aware UI adaptation.",
+        images: [
+          "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-7',
+        title: "Beneish M-Score AI",
+        category: ProjectCategory.AI,
+        techStack: ["Python", "Flet", "Pandas", "PDF Parsing"],
+        description: "AI-powered financial forensics tool for detecting earnings manipulation.",
+        longDescription: "An advanced desktop application that leverages LLMs to extract financial data from complex PDF reports and automatically calculates the Beneish M-Score. It instantly flags potential accounting anomalies and risk of manipulation with detailed ratio breakdowns.",
+        outcome: "Automated forensic analysis of corporate financial statements.",
+        images: [
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1611974765270-ca12586343bb?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-8',
+        title: "CoA-Gen Agent",
+        category: ProjectCategory.AI,
+        techStack: ["FastAPI", "Oracle PL/SQL", "Gemini Flash"],
+        description: "AI Agent that instanly generates industry-specific Chart of Accounts (CoA).",
+        longDescription: "Revolutionizes the ERP presales process by using Generative AI to create complete, hierarchical, and bilingual (English/Arabic) Chart of Accounts in seconds. Maps directly to Oracle ERP schemas, eliminating days of manual configuration work.",
+        outcome: "Reduced ERP discovery phase setup from days to seconds.",
+        images: [
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-9',
+        title: "Schema AI",
+        category: ProjectCategory.AI,
+        techStack: ["Next.js", "React Flow", "Genkit", "Tailwind"],
+        description: "Generative Database Design Studio for architects and developers.",
+        longDescription: "A modern web-based tool for visual database design, powered by AI. Users can generate entity-relationship diagrams (ERDs) from text prompts, analyze schemas for normalization issues, and export SQL DDL or ORM code (FastAPI/SQLAlchemy) automatically.",
+        outcome: "Accelerated database prototyping and schema validation.",
+        images: [
+          "https://images.unsplash.com/photo-1558494949-ef526b01201b?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-10',
+        title: "aQil - Study with AI",
+        category: ProjectCategory.AI,
+        techStack: ["Flet", "LangChain", "Gemini", "SQLite"],
+        description: "Personal AI Tutor that turns PDFs and YouTube videos into quizzes and flashcards.",
+        longDescription: "An educational platform utilizing multimodal AI to transform diverse learning materials (documents, video lectures) into interactive study aids. Features smart quizzes, dynamic flashcards, and structured summaries, with native support for Arabic content.",
+        outcome: "Democratized access to personalized tutoring for students.",
+        images: [
+          "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-11',
+        title: "Labels AI (i18n Tool)",
+        category: ProjectCategory.AI,
+        techStack: ["Python AST", "Gemini Pro", "Flet"],
+        description: "Dev tool for automated UI string extraction and localization.",
+        longDescription: "Solves the pain of manual internationalization by parsing Python source code (AST) to extract UI strings and using Generative AI to translate them into multiple languages JSON files. Features a 'Dev-First' dark UI and real-time synchronization.",
+        outcome: "Reduced app localization time from days to minutes.",
+        images: [
+          "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=800&auto=format&fit=crop"
         ]
       },
       {
@@ -288,6 +366,58 @@ const DATA_EN: AppContent = {
           "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop"
         ]
       },
+      {
+        id: 'prod-7',
+        title: "FusionPOS AI",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Flet Desktop", "React Web", "FastAPI", "FusionAI"],
+        description: "Next-gen retail management system with AI-driven business intelligence.",
+        longDescription: "A unified POS and retail management platform available on Desktop (Python/Flet) and Web (React). Integrated with 'FusionAI' to provide real-time sales forecasting, smart inventory alerts, and natural language business queries (e.g., 'What are my top selling items?').",
+        outcome: "Empowered SMEs with enterprise-grade retail AI insights.",
+        images: [
+          "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1556742031-c6961e8560b0?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'prod-8',
+        title: "DocuSync (Word Mass Replace)",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Python-docx", "Flet", "Pandas"],
+        description: "Automated terminology synchronization tool for ERP documentation.",
+        longDescription: "A specialized QA tool for ERP technical writers. It automates the mass updating of terminology across thousands of pages of MS Word documentation while preserving complex formatting (bold, colors, headers). Synced directly with Excel glossaries.",
+        outcome: "Eliminated manual find-and-replace for 500+ page manuals.",
+        images: [
+          "https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1536733246328-3e56b823e20e?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'prod-9',
+        title: "Personal Index Hub",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Flet", "SQLite", "Python Poetry"],
+        description: "Modern, local-first knowledge management application.",
+        longDescription: "A sophisticated link and resource management app built with Flet and SQLite. Features tagging, categorization, usage statistics, and a privacy-focused local database. Solves browser bookmark clutter with a clean, app-like interface.",
+        outcome: "Centralized personal digital knowledge base.",
+        images: [
+          "https://images.unsplash.com/photo-1481487484168-9b930d55206d?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'prod-10',
+        title: "Excel AI Suite",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["TypeScript (Office Scripts)", "VBA", "Gemini API"],
+        description: "Bringing LLM intelligence directly inside Microsoft Excel.",
+        longDescription: "A suite of integrations connecting Excel to Google Gemini. Includes a VBA-based 'Macro Button' for desktop automation and TypeScript-based Office Scripts for web compatibility. Allows users to query AI directly from cells to analyze data or generate text.",
+        outcome: "Enabled 10k+ Excel users to leverage GenAI within their spreadsheets.",
+        images: [
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
 
       // --- Learning ---
       {
@@ -442,15 +572,93 @@ const DATA_AR: AppContent = {
       // --- AI ---
       {
         id: 'ai-1',
-        title: "معالج الفواتير الذكي",
+        title: "FatooraX - معالج الفواتير الذكي",
         category: ProjectCategory.AI,
-        techStack: ["Computer Vision", "CrewAI", "Vector Search"],
+        techStack: ["Computer Vision", "CrewAI", "Vector Search", "FastAPI"],
         description: "أداة ذكية تستخدم نماذج الرؤية لاستخراج البيانات والتحقق منها من الفواتير الورقية.",
-        longDescription: "حل متطور يطبق تقنيات الذكاء الاصطناعي (Agentic AI) للتحقق من مبالغ الفواتير من خلال فحوصات منطقية. ينفذ مطابقة متعددة الطبقات (المنطق الضبابي، البحث المتجه الدلالي) للتحقق من البيانات مقابل سجلات قاعدة البيانات.",
+        longDescription: "حل متطور (FatooraX) يطبق تقنيات الذكاء الاصطناعي (Agentic AI) للتحقق من مبالغ الفواتير من خلال فحوصات منطقية. ينفذ مطابقة متعددة الطبقات (المنطق الضبابي، البحث المتجه الدلالي) للتحقق من البيانات مقابل سجلات قاعدة البيانات.",
         outcome: "أتمتة التحقق من الأخطاء وإدخال البيانات للفواتير المادية.",
         images: [
           "https://images.unsplash.com/photo-1633419461186-7d75076e82d7?q=80&w=800&auto=format&fit=crop", 
           "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-6',
+        title: "مدير السمات الذكي (AI Theme Manager)",
+        category: ProjectCategory.AI,
+        techStack: ["Python", "Flet", "Gemini 2.0", "LangChain"],
+        description: "نظام تصميم مدعوم بالذكاء الاصطناعي لتخصيص واجهات المستخدم فورياً.",
+        longDescription: "مشروع متطور يربط بين تصميم واجهة المستخدم الثابت والبيئات الديناميكية التي ينظمها الذكاء الاصطناعي. يسمح لوكيل الذكاء الاصطناعي بإنشاء وتطبيق سمات معقدة للتطبيق (الألوان، الطباعة، التصميم المكاني) في الوقت الفعلي.",
+        outcome: "تمكين تكيف واجهة المستخدم مع السياق في الوقت الفعلي.",
+        images: [
+          "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-7',
+        title: "Beneish M-Score - كاشف التلاعب المالي",
+        category: ProjectCategory.AI,
+        techStack: ["Python", "Flet", "Pandas", "PDF Parsing"],
+        description: "أداة جنائية مالية مدعومة بالذكاء الاصطناعي للكشف عن التلاعب في الأرباح.",
+        longDescription: "تطبيق سطح مكتب متقدم يستفيد من النماذج اللغوية الكبيرة (LLMs) لاستخراج البيانات المالية من تقارير PDF المعقدة وحساب مقياس Beneish M-Score تلقائياً. يحدد فوراً المخالفات المحاسبية المحتملة ويفصل النسب المالية.",
+        outcome: "أتمتة التحليل الجنائي للقوائم المالية للشركات.",
+        images: [
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1611974765270-ca12586343bb?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-8',
+        title: "CoA-Gen - وكيل إنشاء دليل الحسابات",
+        category: ProjectCategory.AI,
+        techStack: ["FastAPI", "Oracle PL/SQL", "Gemini Flash"],
+        description: "وكيل ذكي ينشئ أدلة حسابات (CoA) مخصصة للصناعة فورياً.",
+        longDescription: "يحدث ثورة في عملية مبيعات ERP باستخدام الذكاء الاصطناعي التوليدي لإنشاء أدلة حسابات كاملة وهرمية وثنائية اللغة (إنجليزي/عربي) في ثوانٍ. يرتبط مباشرة بمخططات Oracle ERP، مما يلغي أياماً من عمل التكوين اليدوي.",
+        outcome: "تقليص مرحلة استكشاف ERP من أيام إلى ثوانٍ.",
+        images: [
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-9',
+        title: "Schema AI - مصمم قواعد البيانات",
+        category: ProjectCategory.AI,
+        techStack: ["Next.js", "React Flow", "Genkit", "Tailwind"],
+        description: "ستوديو تصميم قواعد البيانات التوليدي للمهندسين والمطورين.",
+        longDescription: "أداة حديثة قائمة على الويب لتصميم قواعد البيانات بصرياً، مدعومة بالذكاء الاصطناعي. يمكن للمستخدمين إنشاء مخططات العلاقات (ERD) من النصوص، وتحليل المخططات، وتصدير كود SQL أو ORM تلقائياً.",
+        outcome: "تسريع نمذجة قواعد البيانات والتحقق من صحة المخططات.",
+        images: [
+          "https://images.unsplash.com/photo-1558494949-ef526b01201b?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-10',
+        title: "عقـل (aQil) - معلمك الشخصي",
+        category: ProjectCategory.AI,
+        techStack: ["Flet", "LangChain", "Gemini", "SQLite"],
+        description: "معلم ذكاء اصطناعي يحول ملفات PDF ومقاطع الفيديو إلى اختبارات وبطاقات تعليمية.",
+        longDescription: "منصة تعليمية تستخدم الذكاء الاصطناعي متعدد الوسائط لتحويل مواد التعلم المختلفة (مستندات، محاضرات فيديو) إلى وسائل دراسية تفاعلية. يتميز باختبارات ذكية، وبطاقات تعليمية ديناميكية، وملخصات منظمة، مع دعم أصلي للمحتوى العربي.",
+        outcome: "توفير وصول ديمقراطي للتعليم الخصوصي للطلاب.",
+        images: [
+          "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-11',
+        title: "Labels AI - أداة التوطين",
+        category: ProjectCategory.AI,
+        techStack: ["Python AST", "Gemini Pro", "Flet"],
+        description: "أداة للمطورين لاستخراج نصوص واجهة المستخدم وترجمتها تلقائياً.",
+        longDescription: "تحل مشكلة الترجمة اليدوية عن طريق تحليل كود بايثون لاستخراج نصوص الواجهة واستخدام الذكاء الاصطناعي التوليدي لترجمتها إلى ملفات JSON متعددة اللغات. تتميز بواجهة مظلمة مخصصة للمطورين ومزامنة فورية.",
+        outcome: "تقليل وقت تعريب التطبيقات من أيام إلى دقائق.",
+        images: [
+          "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=800&auto=format&fit=crop"
         ]
       },
       {
@@ -637,6 +845,58 @@ const DATA_AR: AppContent = {
         images: [
           "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'prod-7',
+        title: "FusionPOS AI - نظام التجزئة الذكي",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Flet Desktop", "React Web", "FastAPI", "FusionAI"],
+        description: "نظام إدارة تجزئة من الجيل التالي مع ذكاء أعمال مدعوم بالذكاء الاصطناعي.",
+        longDescription: "منصة موحدة لنقاط البيع وإدارة التجزئة متاحة على سطح المكتب (Python/Flet) والويب (React). مدمجة مع 'FusionAI' لتوفير تنبؤ المبيعات في الوقت الفعلي، وتنبيهات المخزون الذكية، واستعلامات الأعمال باللغة الطبيعية.",
+        outcome: "تمكين الشركات الصغيرة والمتوسطة برؤى ذكاء اصطناعي من الدرجة المؤسسية.",
+        images: [
+          "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1556742031-c6961e8560b0?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'prod-8',
+        title: "DocuSync - مزامنة الوثائق",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Python-docx", "Flet", "Pandas"],
+        description: "أداة أتمتة مزامنة المصطلحات لتوثيق ERP.",
+        longDescription: "أداة ضمان جودة متخصصة للكتاب الفنيين في مجال ERP. تقوم بأتمتة التحديث الشامل للمصطلحات عبر آلاف الصفحات من وثائق MS Word مع الحفاظ على التنسيق المعقد (عريض، ألوان، رؤوس). متزامنة مباشرة مع مسارد Excel.",
+        outcome: "القضاء على البحث والاستبدال اليدوي لأدلة تتجاوز 500 صفحة.",
+        images: [
+          "https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1536733246328-3e56b823e20e?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'prod-9',
+        title: "الفهرس الشخصي - Personal Index",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Flet", "SQLite", "Python Poetry"],
+        description: "تطبيق حديث لإدارة المعرفة يعمل محلياً.",
+        longDescription: "تطبيق متطور لإدارة الروابط والموارد مبني باستخدام Flet و SQLite. يتميز بوضع العلامات، والتصنيف، وإحصائيات الاستخدام، وقاعدة بيانات محلية تركز على الخصوصية. يحل مشكلة فوضى الإشارات المرجعية في المتصفح بواجهة نظيفة تشبه التطبيق.",
+        outcome: "قاعدة معرفة رقمية شخصية مركزية.",
+        images: [
+          "https://images.unsplash.com/photo-1481487484168-9b930d55206d?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'prod-10',
+        title: "حزمة الذكاء الاصطناعي للإكسل",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["TypeScript (Office Scripts)", "VBA", "Gemini API"],
+        description: "جلب ذكاء النماذج اللغوية الكبيرة (LLM) مباشرة داخل Microsoft Excel.",
+        longDescription: "مجموعة من التكاملات التي تربط Excel بـ Google Gemini. تتضمن 'زر ماكرو' قائم على VBA لأتمتة سطح المكتب ونصوص Office Scripts المستندة إلى TypeScript للتوافق مع الويب. تتيح للمستخدمين استعلام الذكاء الاصطناعي مباشرة من الخلايا لتحليل البيانات أو إنشاء النصوص.",
+        outcome: "تمكين أكثر من 10 آلاف مستخدم لبرنامج Excel من الاستفادة من GenAI داخل جداول البيانات.",
+        images: [
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
         ]
       },
 
