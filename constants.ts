@@ -141,6 +141,19 @@ const DATA_EN: AppContent = {
           "https://images.unsplash.com/photo-1661956602116-aa6865609028?q=80&w=800&auto=format&fit=crop"
         ]
       },
+      {
+        id: 'ai-5',
+        title: "TeamFlow - AI Issue Tracker",
+        category: ProjectCategory.AI,
+        techStack: ["Next.js", "Genkit AI", "shadcn/ui", "Recharts"],
+        description: "Modern AI-powered issue tracking system with natural language processing for software teams.",
+        longDescription: "TeamFlow minimizes administrative overhead by leveraging AI to automatically categorize issues, suggest assignees, and generate unique issue codes. Features include AI-assisted issue creation, insightful dashboards with KPIs, Kanban board view, and dynamic user/system management. Built with RTL support for Arabic-speaking teams.",
+        outcome: "Reduced issue creation time by 70% with AI auto-population.",
+        images: [
+          "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
 
       // --- ERP ---
       {
@@ -236,6 +249,45 @@ const DATA_EN: AppContent = {
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
         ]
       },
+      {
+        id: 'prod-4',
+        title: "Task Tracker Pro",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Advanced Excel", "VBA", "Dynamic Charts"],
+        description: "Exceptional Excel-based task tracking solution with stunning visualizations.",
+        longDescription: "A comprehensive task management spreadsheet featuring dynamic progress visualization, interactive dashboards, and automated status tracking. Designed to enhance productivity and streamline project management with captivating features and an intuitive interface.",
+        outcome: "Simplified project tracking for teams without complex software.",
+        images: [
+          "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'prod-5',
+        title: "Employee Leave Tracker",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Excel", "VBA", "Automation"],
+        description: "Comprehensive leave management system with style and efficiency.",
+        longDescription: "A full-featured Excel solution for managing employee leaves with seamless configuration options. Offers automated leave calculations, visual dashboards, and easy-to-use interfaces for HR teams to track vacations, sick days, and other leave types.",
+        outcome: "Streamlined HR leave management for 200+ employees.",
+        images: [
+          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'prod-6',
+        title: "MediStock - Inventory Control",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Excel", "VBA", "Data Visualization"],
+        description: "Ultimate medication stock distribution and allocation management system.",
+        longDescription: "Comprehensive Excel-based inventory management tool designed for efficient medication stock distribution across multiple branches. Features six dynamic sheets with user-friendly navigation, customizable configuration options, and visually appealing dashboards for optimizing stock management.",
+        outcome: "Optimized medication inventory across 15+ pharmacy branches.",
+        images: [
+          "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
 
       // --- Learning ---
       {
@@ -262,6 +314,19 @@ const DATA_EN: AppContent = {
         images: [
           "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'learn-3',
+        title: "Risk Assessment Tracker",
+        category: ProjectCategory.LEARNING,
+        techStack: ["Excel", "ISO Standards", "Risk Management"],
+        description: "Multilingual ISO standards risk assessment tracker with comprehensive dashboard.",
+        longDescription: "Meticulously designed Excel spreadsheet for ISO standards compliance (ISMS, QMS, ITSMS). Features dynamic dashboard, criteria and scores input sheet, and user-friendly sidebar navigation. Supports multiple languages and provides comprehensive risk assessment and compliance tracking capabilities.",
+        outcome: "Achieved ISO compliance tracking for enterprise clients.",
+        images: [
+          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
         ]
       }
     ]
@@ -414,6 +479,32 @@ const DATA_AR: AppContent = {
           "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop"
         ]
       },
+      {
+        id: 'ai-4',
+        title: "وكيل المبيعات التنبؤي",
+        category: ProjectCategory.AI,
+        techStack: ["Python", "Scikit-Learn", "Flet GUI"],
+        description: "نموذج تعلم آلي للتنبؤ باتجاهات المبيعات واحتياجات المخزون.",
+        longDescription: "تطوير نموذج تنبؤي باستخدام Scikit-Learn لتحليل بيانات المبيعات التاريخية والتنبؤ بالطلب المستقبلي. مغلف في واجهة مستخدم سهلة الاستخدام باستخدام إطار عمل Flet، مما يسمح للموظفين غير التقنيين بتشغيل التوقعات وتعديل المعلمات ديناميكيًا.",
+        outcome: "تعزيز دقة تخطيط المخزون بنسبة 25٪.",
+        images: [
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1661956602116-aa6865609028?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'ai-5',
+        title: "TeamFlow - متتبع القضايا الذكي",
+        category: ProjectCategory.AI,
+        techStack: ["Next.js", "Genkit AI", "shadcn/ui", "Recharts"],
+        description: "نظام حديث لتتبع القضايا مدعوم بالذكاء الاصطناعي مع معالجة اللغة الطبيعية لفرق البرمجيات.",
+        longDescription: "يعمل TeamFlow على تقليل العبء الإداري من خلال الاستفادة من الذكاء الاصطناعي لتصنيف المشكلات تلقائيًا واقتراح المكلفين وإنشاء رموز فريدة للمشاكل. تشمل الميزات إنشاء مشكلات بمساعدة الذكاء الاصطناعي، ولوحات معلومات ثاقبة مع مؤشرات الأداء الرئيسية، وعرض لوحة كانبان، وإدارة ديناميكية للمستخدم/النظام. مصمم بدعم كامل للغة العربية (RTL).",
+        outcome: "تقليل وقت إنشاء المشكلات بنسبة 70٪ بفضل التعبئة التلقائية بالذكاء الاصطناعي.",
+        images: [
+          "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
 
       // --- ERP ---
       {
@@ -509,6 +600,45 @@ const DATA_AR: AppContent = {
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
         ]
       },
+      {
+        id: 'prod-4',
+        title: "متتبع المهام الاحترافي",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Advanced Excel", "VBA", "Dynamic Charts"],
+        description: "حل استثنائي لتتبع المهام قائم على Excel مع تصورات مذهلة.",
+        longDescription: "جدول بيانات شامل لإدارة المهام يتميز بتصور ديناميكي للتقدم، ولوحات معلومات تفاعلية، وتتبع آلي للحالة. مصمم لتعزيز الإنتاجية وتبسيط إدارة المشاريع بميزات جذابة وواجهة بديهية.",
+        outcome: "تبسيط تتبع المشاريع للفرق دون الحاجة لبرمجيات معقدة.",
+        images: [
+          "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'prod-5',
+        title: "متتبع إجازات الموظفين",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Excel", "VBA", "Automation"],
+        description: "نظام شامل لإدارة الإجازات بأسلوب وكفاءة.",
+        longDescription: "حل Excel كامل الميزات لإدارة إجازات الموظفين مع خيارات تكوين سلسة. يوفر حسابات آلية للإجازات، ولوحات معلومات مرئية، واجهات سهلة الاستخدام لفرق الموارد البشرية لتتبع الإجازات والمرضيات وأنواع الإجازات الأخرى.",
+        outcome: "تبسيط إدارة إجازات الموارد البشرية لأكثر من 200 موظف.",
+        images: [
+          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'prod-6',
+        title: "MediStock - مراقبة المخزون",
+        category: ProjectCategory.PRODUCTIVITY,
+        techStack: ["Excel", "VBA", "Data Visualization"],
+        description: "النظام الأمثل لتوزيع وتخصيص مخزون الأدوية.",
+        longDescription: "أداة شاملة لإدارة المخزون قائمة على Excel مصممة للتوزيع الفعال لمخزون الأدوية عبر فروع متعددة. تتميز بست أوراق ديناميكية مع تنقل سهل الاستخدام، وخيارات تكوين قابلة للتخصيص، ولوحات معلومات جذابة بصريًا لتحسين إدارة المخزون.",
+        outcome: "تحسين مخزون الأدوية عبر أكثر من 15 فرع صيدلية.",
+        images: [
+          "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
 
       // --- Learning ---
       {
@@ -535,6 +665,19 @@ const DATA_AR: AppContent = {
         images: [
           "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      {
+        id: 'learn-3',
+        title: "متتبع تقييم المخاطر",
+        category: ProjectCategory.LEARNING,
+        techStack: ["Excel", "ISO Standards", "Risk Management"],
+        description: "متتبع تقييم مخاطر معايير ISO متعدد اللغات مع لوحة معلومات شاملة.",
+        longDescription: "جدول بيانات Excel مصمم بدقة للامتثال لمعايير ISO (ISMS، QMS، ITSMS). يتميز بلوحة معلومات ديناميكية، ورقة إدخال المعايير والدرجات، وتنقل سهل عبر الشريط الجانبي. يدعم لغات متعددة ويوفر قدرات شاملة لتقييم المخاطر وتتبع الامتثال.",
+        outcome: "تحقيق تتبع الامتثال لـ ISO لعملاء الشركات.",
+        images: [
+          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
         ]
       }
     ]
