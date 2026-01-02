@@ -295,7 +295,7 @@ const DATA_EN: AppContent = {
         techStack: ["React", "AI Integration", "Local-First", "Vibe Coding"],
         description: "AI-driven application for structured, multilingual technical documentation automation.",
         longDescription: "A powerful local-first application designed to streamline the creation of structured user manuals. It empowers technical writers to build consistent 'Memory Blocks', assemble them via drag-and-drop, and leverage AI to generate documentation directly from screenshots and context checkpoints.",
-        outcome: "Accelerated documentation workflow by 300% via reusable blocks.",
+        outcome: "Accelerated documentation workflow significantly via reusable blocks.",
         images: [
           "https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop"
@@ -386,7 +386,7 @@ const DATA_EN: AppContent = {
         techStack: ["Python-docx", "Flet", "Pandas"],
         description: "Automated terminology synchronization tool for ERP documentation.",
         longDescription: "A specialized QA tool for ERP technical writers. It automates the mass updating of terminology across thousands of pages of MS Word documentation while preserving complex formatting (bold, colors, headers). Synced directly with Excel glossaries.",
-        outcome: "Eliminated manual find-and-replace for 500+ page manuals.",
+        outcome: "Eliminated manual find-and-replace for large technical manuals.",
         images: [
           "https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1536733246328-3e56b823e20e?q=80&w=800&auto=format&fit=crop"
@@ -412,7 +412,7 @@ const DATA_EN: AppContent = {
         techStack: ["TypeScript (Office Scripts)", "VBA", "Gemini API"],
         description: "Bringing LLM intelligence directly inside Microsoft Excel.",
         longDescription: "A suite of integrations connecting Excel to Google Gemini. Includes a VBA-based 'Macro Button' for desktop automation and TypeScript-based Office Scripts for web compatibility. Allows users to query AI directly from cells to analyze data or generate text.",
-        outcome: "Enabled 10k+ Excel users to leverage GenAI within their spreadsheets.",
+        outcome: "Enabled Excel users to leverage GenAI capabilities directly in spreadsheets.",
         images: [
           "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
@@ -588,8 +588,8 @@ const DATA_AR: AppContent = {
         title: "مدير السمات الذكي (AI Theme Manager)",
         category: ProjectCategory.AI,
         techStack: ["Python", "Flet", "Gemini 2.0", "LangChain"],
-        description: "نظام تصميم مدعوم بالذكاء الاصطناعي لتخصيص واجهات المستخدم فورياً.",
-        longDescription: "مشروع متطور يربط بين تصميم واجهة المستخدم الثابت والبيئات الديناميكية التي ينظمها الذكاء الاصطناعي. يسمح لوكيل الذكاء الاصطناعي بإنشاء وتطبيق سمات معقدة للتطبيق (الألوان، الطباعة، التصميم المكاني) في الوقت الفعلي.",
+        description: "نظام تصميم ديناميكي مدعوم بالذكاء الاصطناعي لتكييف واجهة المستخدم بشكل فوري.",
+        longDescription: "مشروع متطور يربط بين تصميم واجهة المستخدم الثابت والبيئات الديناميكية. يسمح لوكيل الذكاء الاصطناعي بإنشاء وتطبيق سمات معقدة للتطبيق (الألوان، الطباعة، التصميم المكاني) في الوقت الفعلي بناءً على تفضيلات المستخدم.",
         outcome: "تمكين تكيف واجهة المستخدم مع السياق في الوقت الفعلي.",
         images: [
           "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=800&auto=format&fit=crop",
@@ -598,11 +598,11 @@ const DATA_AR: AppContent = {
       },
       {
         id: 'ai-7',
-        title: "Beneish M-Score - كاشف التلاعب المالي",
+        title: "Beneish M-Score - كاشف الاحتيال المالي",
         category: ProjectCategory.AI,
         techStack: ["Python", "Flet", "Pandas", "PDF Parsing"],
-        description: "أداة جنائية مالية مدعومة بالذكاء الاصطناعي للكشف عن التلاعب في الأرباح.",
-        longDescription: "تطبيق سطح مكتب متقدم يستفيد من النماذج اللغوية الكبيرة (LLMs) لاستخراج البيانات المالية من تقارير PDF المعقدة وحساب مقياس Beneish M-Score تلقائياً. يحدد فوراً المخالفات المحاسبية المحتملة ويفصل النسب المالية.",
+        description: "أداة للتحليل الجنائي المالي تستخدم الذكاء الاصطناعي لكشف التلاعب المحتمل في الأرباح.",
+        longDescription: "تطبيق سطح مكتب متقدم يستفيد من النماذج اللغوية الكبيرة (LLMs) لاستخراج البيانات المالية من تقارير PDF المعقدة وحساب مقياس Beneish M-Score تلقائياً. يحدد فوراً المخالفات المحاسبية المحتملة ويفصل النسب المالية بدقة.",
         outcome: "أتمتة التحليل الجنائي للقوائم المالية للشركات.",
         images: [
           "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
@@ -611,12 +611,12 @@ const DATA_AR: AppContent = {
       },
       {
         id: 'ai-8',
-        title: "CoA-Gen - وكيل إنشاء دليل الحسابات",
+        title: "CoA-Gen - منشئ دليل الحسابات الذكي",
         category: ProjectCategory.AI,
         techStack: ["FastAPI", "Oracle PL/SQL", "Gemini Flash"],
         description: "وكيل ذكي ينشئ أدلة حسابات (CoA) مخصصة للصناعة فورياً.",
-        longDescription: "يحدث ثورة في عملية مبيعات ERP باستخدام الذكاء الاصطناعي التوليدي لإنشاء أدلة حسابات كاملة وهرمية وثنائية اللغة (إنجليزي/عربي) في ثوانٍ. يرتبط مباشرة بمخططات Oracle ERP، مما يلغي أياماً من عمل التكوين اليدوي.",
-        outcome: "تقليص مرحلة استكشاف ERP من أيام إلى ثوانٍ.",
+        longDescription: "يحدث ثورة في عملية مبيعات ERP باستخدام الذكاء الاصطناعي التوليدي لإنشاء أدلة حسابات كاملة وهرمية وثنائية اللغة (إنجليزي/عربي) في ثوانٍ. يرتبط مباشرة بمخططات Oracle ERP، مما يختصر أياماً من عمل التكوين والتجهيز.",
+        outcome: "تسريع عملية استكشاف وتجهيز مشاريع ERP.",
         images: [
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop"
@@ -628,7 +628,7 @@ const DATA_AR: AppContent = {
         category: ProjectCategory.AI,
         techStack: ["Next.js", "React Flow", "Genkit", "Tailwind"],
         description: "ستوديو تصميم قواعد البيانات التوليدي للمهندسين والمطورين.",
-        longDescription: "أداة حديثة قائمة على الويب لتصميم قواعد البيانات بصرياً، مدعومة بالذكاء الاصطناعي. يمكن للمستخدمين إنشاء مخططات العلاقات (ERD) من النصوص، وتحليل المخططات، وتصدير كود SQL أو ORM تلقائياً.",
+        longDescription: "أداة حديثة قائمة على الويب لتصميم قواعد البيانات بصرياً، مدعومة بالذكاء الاصطناعي. تتيح للمستخدمين إنشاء مخططات العلاقات (ERD) من الوصف النصي، وتحليل المخططات، وتصدير كود SQL أو ORM تلقائياً.",
         outcome: "تسريع نمذجة قواعد البيانات والتحقق من صحة المخططات.",
         images: [
           "https://images.unsplash.com/photo-1558494949-ef526b01201b?q=80&w=800&auto=format&fit=crop",
@@ -637,12 +637,12 @@ const DATA_AR: AppContent = {
       },
       {
         id: 'ai-10',
-        title: "عقـل (aQil) - معلمك الشخصي",
+        title: "عقـل (aQil) - رفيقك الدراسي الذكي",
         category: ProjectCategory.AI,
         techStack: ["Flet", "LangChain", "Gemini", "SQLite"],
-        description: "معلم ذكاء اصطناعي يحول ملفات PDF ومقاطع الفيديو إلى اختبارات وبطاقات تعليمية.",
-        longDescription: "منصة تعليمية تستخدم الذكاء الاصطناعي متعدد الوسائط لتحويل مواد التعلم المختلفة (مستندات، محاضرات فيديو) إلى وسائل دراسية تفاعلية. يتميز باختبارات ذكية، وبطاقات تعليمية ديناميكية، وملخصات منظمة، مع دعم أصلي للمحتوى العربي.",
-        outcome: "توفير وصول ديمقراطي للتعليم الخصوصي للطلاب.",
+        description: "منصة تعليمية تفاعلية تحول المحتوى التقليدي إلى تجربة دراسية ذكية.",
+        longDescription: "منصة تعليمية تستخدم الذكاء الاصطناعي متعدد الوسائط لتحويل مواد التعلم المختلفة (مستندات PDF، محاضرات فيديو) إلى وسائل دراسية تفاعلية. تتميز باختبارات ذكية، وبطاقات تعليمية ديناميكية، وملخصات منظمة، مع دعم ممتاز للمحتوى العربي.",
+        outcome: "تحويل الدراسة التقليدية إلى تجربة تفاعلية مخصصة.",
         images: [
           "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800&auto=format&fit=crop"
@@ -653,9 +653,9 @@ const DATA_AR: AppContent = {
         title: "Labels AI - أداة التوطين",
         category: ProjectCategory.AI,
         techStack: ["Python AST", "Gemini Pro", "Flet"],
-        description: "أداة للمطورين لاستخراج نصوص واجهة المستخدم وترجمتها تلقائياً.",
+        description: "أداة ذكية للمطورين لأتمتة استخراج وترجمة نصوص واجهات التطبيقات.",
         longDescription: "تحل مشكلة الترجمة اليدوية عن طريق تحليل كود بايثون لاستخراج نصوص الواجهة واستخدام الذكاء الاصطناعي التوليدي لترجمتها إلى ملفات JSON متعددة اللغات. تتميز بواجهة مظلمة مخصصة للمطورين ومزامنة فورية.",
-        outcome: "تقليل وقت تعريب التطبيقات من أيام إلى دقائق.",
+        outcome: "توفير وقت وجهد كبير في عملية تعريب التطبيقات.",
         images: [
           "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=800&auto=format&fit=crop"
@@ -681,7 +681,7 @@ const DATA_AR: AppContent = {
         techStack: ["Generative AI", "PDF Parsing", "Pandas"],
         description: "أداة ويب تستخدم GenAI لأتمتة تحليل القوائم المالية بصيغة PDF.",
         longDescription: "تبسط عملية استخراج البيانات المالية الرئيسية من التقارير السنوية وتحسب تلقائيًا نسب السيولة والربحية والملاءة المالية. توفر نظرة عامة سريعة ومفيدة عن الصحة المالية للشركة دون إدخال بيانات يدوي.",
-        outcome: "تقليل وقت تحليل القوائم المالية بنسبة 90٪.",
+        outcome: "تقليل وقت تحليل القوائم المالية بشكل كبير.",
         images: [
           "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop"
@@ -694,7 +694,7 @@ const DATA_AR: AppContent = {
         techStack: ["Python", "Scikit-Learn", "Flet GUI"],
         description: "نموذج تعلم آلي للتنبؤ باتجاهات المبيعات واحتياجات المخزون.",
         longDescription: "تطوير نموذج تنبؤي باستخدام Scikit-Learn لتحليل بيانات المبيعات التاريخية والتنبؤ بالطلب المستقبلي. مغلف في واجهة مستخدم سهلة الاستخدام باستخدام إطار عمل Flet، مما يسمح للموظفين غير التقنيين بتشغيل التوقعات وتعديل المعلمات ديناميكيًا.",
-        outcome: "تعزيز دقة تخطيط المخزون بنسبة 25٪.",
+        outcome: "تعزيز دقة تخطيط المخزون وتقليل الهدر.",
         images: [
           "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1661956602116-aa6865609028?q=80&w=800&auto=format&fit=crop"
@@ -707,7 +707,7 @@ const DATA_AR: AppContent = {
         techStack: ["Next.js", "Genkit AI", "shadcn/ui", "Recharts"],
         description: "نظام حديث لتتبع القضايا مدعوم بالذكاء الاصطناعي مع معالجة اللغة الطبيعية لفرق البرمجيات.",
         longDescription: "يعمل TeamFlow على تقليل العبء الإداري من خلال الاستفادة من الذكاء الاصطناعي لتصنيف المشكلات تلقائيًا واقتراح المكلفين وإنشاء رموز فريدة للمشاكل. تشمل الميزات إنشاء مشكلات بمساعدة الذكاء الاصطناعي، ولوحات معلومات ثاقبة مع مؤشرات الأداء الرئيسية، وعرض لوحة كانبان، وإدارة ديناميكية للمستخدم/النظام. مصمم بدعم كامل للغة العربية (RTL).",
-        outcome: "تقليل وقت إنشاء المشكلات بنسبة 70٪ بفضل التعبئة التلقائية بالذكاء الاصطناعي.",
+        outcome: "تقليل وقت إنشاء وتنظيم المهام بشكل ملحوظ.",
         images: [
           "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop"
@@ -776,7 +776,7 @@ const DATA_AR: AppContent = {
         techStack: ["React", "AI Integration", "Local-First", "Vibe Coding"],
         description: "تطبيق مدعوم بالذكاء الاصطناعي لأتمتة التوثيق الفني الهيكلي متعدد اللغات.",
         longDescription: "تطبيق قوي يعمل محلياً ومصمم لتبسيط إنشاء أدلة المستخدم المنظمة. يمكّن الكتاب الفنيين من بناء 'وحدات ذاكرة' متسقة، وتجميعها عبر السحب والإفلات، والاستفادة من الذكاء الاصطناعي لتوليد التوثيق مباشرة من لقطات الشاشة ونقاط السياق.",
-        outcome: "تسريع سير عمل التوثيق بنسبة 300% عبر الوحدات القابلة لإعادة الاستخدام.",
+        outcome: "تسريع سير عمل التوثيق بشكل كبير.",
         images: [
           "https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop"
@@ -849,10 +849,10 @@ const DATA_AR: AppContent = {
       },
       {
         id: 'prod-7',
-        title: "FusionPOS AI - نظام التجزئة الذكي",
+        title: "FusionPOS AI - منظومة إدارة التجزئة الذكية",
         category: ProjectCategory.PRODUCTIVITY,
         techStack: ["Flet Desktop", "React Web", "FastAPI", "FusionAI"],
-        description: "نظام إدارة تجزئة من الجيل التالي مع ذكاء أعمال مدعوم بالذكاء الاصطناعي.",
+        description: "منصة إدارة تجزئة من الجيل التالي مع ذكاء أعمال مدعوم بالذكاء الاصطناعي.",
         longDescription: "منصة موحدة لنقاط البيع وإدارة التجزئة متاحة على سطح المكتب (Python/Flet) والويب (React). مدمجة مع 'FusionAI' لتوفير تنبؤ المبيعات في الوقت الفعلي، وتنبيهات المخزون الذكية، واستعلامات الأعمال باللغة الطبيعية.",
         outcome: "تمكين الشركات الصغيرة والمتوسطة برؤى ذكاء اصطناعي من الدرجة المؤسسية.",
         images: [
@@ -862,12 +862,12 @@ const DATA_AR: AppContent = {
       },
       {
         id: 'prod-8',
-        title: "DocuSync - مزامنة الوثائق",
+        title: "DocuSync - مزامنة الوثائق الفنية",
         category: ProjectCategory.PRODUCTIVITY,
         techStack: ["Python-docx", "Flet", "Pandas"],
-        description: "أداة أتمتة مزامنة المصطلحات لتوثيق ERP.",
-        longDescription: "أداة ضمان جودة متخصصة للكتاب الفنيين في مجال ERP. تقوم بأتمتة التحديث الشامل للمصطلحات عبر آلاف الصفحات من وثائق MS Word مع الحفاظ على التنسيق المعقد (عريض، ألوان، رؤوس). متزامنة مباشرة مع مسارد Excel.",
-        outcome: "القضاء على البحث والاستبدال اليدوي لأدلة تتجاوز 500 صفحة.",
+        description: "أداة ذكية لمزامنة المصطلحات الفنية لتوثيق أنظمة ERP.",
+        longDescription: "أداة ضمان جودة متخصصة للكتاب الفنيين. تقوم بأتمتة التحديث الشامل للمصطلحات عبر آلاف الصفحات من وثائق MS Word مع الحفاظ على التنسيق المعقد. متزامنة مباشرة مع مسارد Excel.",
+        outcome: "القضاء على عناء البحث والاستبدال اليدوي في الأدلة التقنية الضخمة.",
         images: [
           "https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1536733246328-3e56b823e20e?q=80&w=800&auto=format&fit=crop"
@@ -878,9 +878,9 @@ const DATA_AR: AppContent = {
         title: "الفهرس الشخصي - Personal Index",
         category: ProjectCategory.PRODUCTIVITY,
         techStack: ["Flet", "SQLite", "Python Poetry"],
-        description: "تطبيق حديث لإدارة المعرفة يعمل محلياً.",
-        longDescription: "تطبيق متطور لإدارة الروابط والموارد مبني باستخدام Flet و SQLite. يتميز بوضع العلامات، والتصنيف، وإحصائيات الاستخدام، وقاعدة بيانات محلية تركز على الخصوصية. يحل مشكلة فوضى الإشارات المرجعية في المتصفح بواجهة نظيفة تشبه التطبيق.",
-        outcome: "قاعدة معرفة رقمية شخصية مركزية.",
+        description: "مساحة عمل شخصية لإدارة المعرفة الرقمية تعمل محلياً.",
+        longDescription: "تطبيق متطور لإدارة الروابط والموارد مبني باستخدام Flet و SQLite. يتميز بوضع العلامات، والتصنيف، وإحصائيات الاستخدام، وقاعدة بيانات محلية تركز على الخصوصية. يحل مشكلة فوضى الإشارات المرجعية في المتصفح بواجهة نظيفة.",
+        outcome: "إنشاء قاعدة معرفة رقمية شخصية مركزية.",
         images: [
           "https://images.unsplash.com/photo-1481487484168-9b930d55206d?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=800&auto=format&fit=crop"
@@ -891,9 +891,9 @@ const DATA_AR: AppContent = {
         title: "حزمة الذكاء الاصطناعي للإكسل",
         category: ProjectCategory.PRODUCTIVITY,
         techStack: ["TypeScript (Office Scripts)", "VBA", "Gemini API"],
-        description: "جلب ذكاء النماذج اللغوية الكبيرة (LLM) مباشرة داخل Microsoft Excel.",
-        longDescription: "مجموعة من التكاملات التي تربط Excel بـ Google Gemini. تتضمن 'زر ماكرو' قائم على VBA لأتمتة سطح المكتب ونصوص Office Scripts المستندة إلى TypeScript للتوافق مع الويب. تتيح للمستخدمين استعلام الذكاء الاصطناعي مباشرة من الخلايا لتحليل البيانات أو إنشاء النصوص.",
-        outcome: "تمكين أكثر من 10 آلاف مستخدم لبرنامج Excel من الاستفادة من GenAI داخل جداول البيانات.",
+        description: "دمج قدرات النماذج اللغوية الكبيرة (LLM) داخل بيئة Microsoft Excel مباشرة.",
+        longDescription: "مجموعة أدوات تربط Excel بـ Google Gemini. تتضمن 'زر ماكرو' (VBA) لأتمتة سطح المكتب ونصوص Office Scripts للتوافق مع الويب. تتيح للمستخدمين استعلام الذكاء الاصطناعي تحليل البيانات أو إنشاء النصوص مباشرة من داخل الخلايا.",
+        outcome: "تمكين مستخدمي Excel من الاستفادة من قدرات الذكاء الاصطناعي التوليدي مباشرة داخل الجداول.",
         images: [
           "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
