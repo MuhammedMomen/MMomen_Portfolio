@@ -196,26 +196,29 @@ export const ProjectsView: React.FC<{ content: AppContent['projects'] }> = ({ co
         </div>
       </div>
 
-      <div className="flex-1 overflow-y-auto pb-32 no-scrollbar px-1 -mx-1">
+      <div className="flex-1 overflow-x-auto overflow-y-hidden pb-12 pt-4 no-scrollbar -mx-4 px-4 md:-mx-8 md:px-8 snap-x snap-mandatory flex items-center">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeCategory}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.3 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+            className="flex gap-6 md:gap-8 h-[500px]"
           >
             {filteredProjects.map((project, index) => (
-              <ProjectCard 
-                key={project.id} 
-                project={project} 
-                index={index} 
-                outcomeLabel={content.outcomeLabel} 
-                viewDetailsLabel={content.viewDetailsLabel}
-                onClick={() => setSelectedProject(project)}
-              />
+              <div key={project.id} className="w-[85vw] md:w-[400px] shrink-0 snap-center h-full">
+                <ProjectCard 
+                  project={project} 
+                  index={index} 
+                  outcomeLabel={content.outcomeLabel} 
+                  viewDetailsLabel={content.viewDetailsLabel}
+                  onClick={() => setSelectedProject(project)}
+                />
+              </div>
             ))}
+            {/* Spacer for last item */}
+            <div className="w-4 shrink-0" />
           </motion.div>
         </AnimatePresence>
       </div>

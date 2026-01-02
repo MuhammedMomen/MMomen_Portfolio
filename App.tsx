@@ -71,7 +71,7 @@ const App: React.FC = () => {
         >
           <div className="flex items-center gap-1 px-1 font-mono text-xs font-bold">
             <Languages size={16} />
-            <span>{lang === 'en' ? 'EN' : 'AR'}</span>
+            <span>{lang === 'en' ? 'AR' : 'EN'}</span>
           </div>
         </button>
 
