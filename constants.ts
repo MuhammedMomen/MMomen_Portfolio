@@ -690,10 +690,11 @@ export const CONTENT = {
 };
 
 export const CONTACT_DATA_STATIC = {
-  email: "m.momen.cairo@gmail.com",
-  phone: "+201016629988",
+  email: "momen.acct@gmail.com",
+  phone: "0201503239744",
+  whatsapp: "0201019593412",
   linkedin: "linkedin.com/in/muhammedmomen",
-  github: "github.com/MMomen-ERP",
+  github: "github.com/MuhammedMomen",
   website: "mmomen-portfolio.github.io"
 };
 

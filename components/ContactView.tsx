@@ -16,8 +16,8 @@ export const ContactView: React.FC<{ content: AppContent['contact'] }> = ({ cont
   // Generate rich vCard Content including Social Links and Professional Info
   const vcard = `BEGIN:VCARD
 VERSION:3.0
-FN:Mido
-N:;Mido;;;
+FN:Muhammed Momen
+N:;Muhammed Momen;;;
 TITLE:Lead ERP Financial Consultant & AI Architect
 ORG:Ultimate Solutions
 TEL;TYPE=CELL:${CONTACT_DATA_STATIC.phone}
@@ -92,7 +92,7 @@ END:VCARD`;
           </a>
 
           <a 
-            href={`https://wa.me/${CONTACT_DATA_STATIC.phone.replace('+', '')}`}
+            href={`https://wa.me/${CONTACT_DATA_STATIC.whatsapp.replace('+', '')}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center justify-center p-4 bg-surface border border-borderSubtle rounded-2xl hover:border-green-500/50 hover:bg-green-500/5 transition-all group"
