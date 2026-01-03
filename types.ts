@@ -11,8 +11,11 @@ export enum ViewState {
 }
 
 export enum ProjectCategory {
+  AI_AGENTS = 'AI_AGENTS',
+  AI_TOOLS = 'AI_TOOLS',
+  FULLSTACK = 'FULLSTACK',
   ERP = 'ERP_BUSINESS',
-  AI = 'AI_RAG',
+  EXCEL = 'EXCEL',
   PRODUCTIVITY = 'PRODUCTIVITY',
   LEARNING = 'LEARNING'
 }
@@ -40,7 +43,9 @@ export interface ProjectItem {
   category: ProjectCategory;
   techStack: string[];
   description: string;
-  longDescription: string;
+  // Dual-view content
+  technicalDescription: string;
+  businessDescription: string;
   outcome: string;
   images: string[];
 }

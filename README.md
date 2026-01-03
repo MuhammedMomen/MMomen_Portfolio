@@ -2,7 +2,7 @@
 <img width="1200" height="475" alt="Portfolio Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-<h1 align="center">Mido | Lead ERP Financial Consultant & AI Architect</h1>
+<h1 align="center">Muhammed Momen | Lead ERP Financial Consultant & AI Architect</h1>
 
 <p align="center">
   <strong>Merging Financial Expertise with Agentic AI & Python Automation</strong>
@@ -10,8 +10,7 @@
 
 <p align="center">
   <a href="https://muhammedmomen.github.io/MMomen_Portfolio/">🌐 Live Portfolio</a> •
-  <a href="https://linkedin.com/in/mido/">💼 LinkedIn</a> •
-  <a href="https://sites.google.com/view/muhammed-momen">📄 Full Showcase</a>
+  <a href="https://linkedin.com/in/muhammedmomen/">💼 LinkedIn</a> •
 </p>
 
 ---
@@ -176,8 +175,8 @@ I'm actively seeking:
 ## 📬 Get in Touch
 
 - **Portfolio**: [muhammedmomen.github.io/MMomen_Portfolio](https://muhammedmomen.github.io/MMomen_Portfolio/)
-- **LinkedIn**: [linkedin.com/in/mido](https://linkedin.com/in/mido/)
-- **Email**: Acct@gmail.com
+- **LinkedIn**: [linkedin.com/in/Muhammed Momen](https://linkedin.com/in/muhammedmomen/)
+- **Email**: momen.acct@gmail.com
 - **Location**: Cairo, Egypt
 
 ---
@@ -190,8 +189,4 @@ MIT License - feel free to use this portfolio template for your own projects!
 
 <p align="center">
   <strong>Built with ❤️ using React, TypeScript, and modern web technologies</strong>
-</p>
-
-<p align="center">
-  <em>View the original AI Studio version: <a href="https://ai.studio/apps/drive/10leP6LbMHTt_0RzXEqn9vZZtL3ru0k5y">AI Studio App</a></em>
 </p>

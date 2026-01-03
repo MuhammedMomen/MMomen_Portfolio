@@ -65,6 +65,7 @@ const ProjectDetailsModal: React.FC<{
   labels: { outcome: string }
 }> = ({ project, onClose, labels }) => {
   const [mounted, setMounted] = useState(false);
+  const [viewMode, setViewMode] = useState<'business' | 'technical'>('business');
 
   useEffect(() => {
     setMounted(true);
@@ -98,7 +99,7 @@ const ProjectDetailsModal: React.FC<{
         <div className="w-full lg:w-3/5 shrink-0 flex flex-col">
           <ImageCarousel images={project.images} />
           
-          {/* Tech Stack in Desktop View - moved below image for better layout */}
+          {/* Tech Stack in Desktop View */}
           <div className="hidden lg:flex flex-wrap gap-2 mt-4">
              {project.techStack.map(tech => (
                 <span key={tech} className="text-xs font-mono px-3 py-1.5 rounded-lg bg-surface border border-borderSubtle text-textSecondary flex items-center gap-1.5">
@@ -118,9 +119,25 @@ const ProjectDetailsModal: React.FC<{
                   </span>
                 ))}
               </div>
-              <motion.h2 layoutId={`project-title-${project.id}`} className="text-3xl md:text-4xl font-heading font-bold text-textPrimary mb-2 leading-tight">
+              <motion.h2 layoutId={`project-title-${project.id}`} className="text-3xl md:text-3xl font-heading font-bold text-textPrimary mb-2 leading-tight">
                 {project.title}
               </motion.h2>
+           </div>
+           
+           {/* Toggle Switch */}
+           <div className="flex bg-surface border border-borderSubtle rounded-full p-1 self-start">
+             <button
+               onClick={() => setViewMode('business')}
+               className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${viewMode === 'business' ? 'bg-primary text-white shadow-sm' : 'text-textSecondary hover:text-textPrimary'}`}
+             >
+               Business View
+             </button>
+             <button
+               onClick={() => setViewMode('technical')}
+               className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${viewMode === 'technical' ? 'bg-primary text-white shadow-sm' : 'text-textSecondary hover:text-textPrimary'}`}
+             >
+               Technical View
+             </button>
            </div>
 
            <div className="p-5 rounded-2xl bg-primary/5 border border-primary/10">
@@ -128,13 +145,32 @@ const ProjectDetailsModal: React.FC<{
                <Zap size={18} className="fill-current" />
                <span className="text-xs font-bold uppercase tracking-wider">{labels.outcome}</span>
              </div>
-             <p className="text-textPrimary font-semibold text-lg md:text-xl leading-snug">{project.outcome}</p>
+             <p className="text-textPrimary font-semibold text-lg leading-snug">{project.outcome}</p>
            </div>
 
            <div className="prose prose-invert max-w-none text-textSecondary leading-relaxed space-y-4">
-             <p className="text-base md:text-lg text-textPrimary font-medium">{project.description}</p>
-             <div className="w-full h-px bg-borderSubtle" />
-             <p className="text-sm md:text-base opacity-90">{project.longDescription}</p>
+             <AnimatePresence mode="wait">
+               <motion.div
+                 key={viewMode}
+                 initial={{ opacity: 0, y: 10 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 exit={{ opacity: 0, y: -10 }}
+                 transition={{ duration: 0.2 }}
+               >
+                 {viewMode === 'business' ? (
+                   <div className="space-y-4">
+                      <p className="text-base md:text-lg text-textPrimary font-medium">{project.description}</p>
+                      <div className="w-full h-px bg-borderSubtle" />
+                      <p className="text-sm md:text-base opacity-90 whitespace-pre-wrap">{project.businessDescription || project.longDescription}</p>
+                   </div>
+                 ) : (
+                   <div className="space-y-4">
+                      <p className="text-sm font-mono text-primary">Architecture & Logic</p>
+                      <p className="text-sm md:text-base opacity-90 whitespace-pre-wrap">{project.technicalDescription || "Technical details available in repository."}</p>
+                   </div>
+                 )}
+               </motion.div>
+             </AnimatePresence>
            </div>
         </div>
       </motion.div>
@@ -145,12 +181,15 @@ const ProjectDetailsModal: React.FC<{
 
 // --- Main Projects View ---
 export const ProjectsView: React.FC<{ content: AppContent['projects'] }> = ({ content }) => {
-  const [activeCategory, setActiveCategory] = useState<ProjectCategory>(ProjectCategory.ERP);
+  const [activeCategory, setActiveCategory] = useState<ProjectCategory>(ProjectCategory.AI_AGENTS);
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
   
   const categoryKeys: ProjectCategory[] = [
+    ProjectCategory.AI_AGENTS,
+    ProjectCategory.AI_TOOLS,
+    ProjectCategory.FULLSTACK,
     ProjectCategory.ERP,
-    ProjectCategory.AI,
+    ProjectCategory.EXCEL,
     ProjectCategory.PRODUCTIVITY,
     ProjectCategory.LEARNING
   ];
@@ -171,28 +210,30 @@ export const ProjectsView: React.FC<{ content: AppContent['projects'] }> = ({ co
       animate="visible"
       exit="exit"
     >
-      <div className="mb-8 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+      <div className="mb-6 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div>
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-textPrimary mb-2">{content.title}</h2>
           <p className="text-textSecondary text-sm md:text-base max-w-lg">
-            Selected works demonstrating enterprise scale, automation, and technical depth.
+            {content.items.find(i=>true)?.title ? "Selected works demonstrating enterprise scale, automation, and technical depth." : "Loading..."}
           </p>
         </div>
         
-        <div className="flex flex-wrap gap-2">
-          {categoryKeys.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-2 rounded-full text-xs md:text-sm font-medium transition-all duration-300 border backdrop-blur-sm ${
-                activeCategory === cat 
-                  ? 'bg-primary text-white border-primary shadow-lg shadow-primary/25' 
-                  : 'bg-surface/50 border-borderSubtle text-textSecondary hover:border-textSecondary hover:bg-surface'
-              }`}
-            >
-              {content.categories[cat]}
-            </button>
-          ))}
+        <div className="w-full md:w-auto overflow-x-auto pb-2 no-scrollbar">
+          <div className="flex gap-2 min-w-max">
+            {categoryKeys.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`px-4 py-2 rounded-full text-xs md:text-sm font-medium transition-all duration-300 border backdrop-blur-sm whitespace-nowrap ${
+                  activeCategory === cat 
+                    ? 'bg-primary text-white border-primary shadow-lg shadow-primary/25' 
+                    : 'bg-surface/50 border-borderSubtle text-textSecondary hover:border-textSecondary hover:bg-surface'
+                }`}
+              >
+                {content.categories[cat]}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
