@@ -82,6 +82,7 @@ export interface AppContent {
   };
   projects: {
     title: string;
+    subtitle: string;
     categories: Record<ProjectCategory, string>;
     items: ProjectItem[];
     outcomeLabel: string;

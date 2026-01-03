@@ -79,6 +79,7 @@ const DATA_EN: AppContent = {
   },
   projects: {
     title: "Innovations & Projects",
+    subtitle: "Selected works demonstrating enterprise scale, automation, and technical depth.",
     outcomeLabel: "Business Outcome",
     viewDetailsLabel: "Deep Dive",
     categories: {
@@ -122,13 +123,13 @@ const DATA_EN: AppContent = {
       },
       {
         id: 'ai-8',
-        title: "CoA-Gen Agent",
+        title: "Presales Demo Data Generation by AI Agent",
         category: ProjectCategory.AI_AGENTS,
         techStack: ["FastAPI", "Oracle PL/SQL", "Gemini Flash"],
-        description: "Intelligent agent that generates industry-specific Charts of Accounts (CoA) instantly.",
-        businessDescription: "Revolutionizes the ERP presales and setup phase. Instead of spending days configuring a Chart of Accounts manually, consultants can generate a tailored, bilingual (EN/AR) structure in seconds, accelerating implementation timelines.",
-        technicalDescription: "Leverages Generative AI to construct hierarchical financial structures based on industry prompts. Integrates with Oracle PL/SQL to validate and directly map the generated CoA into the ERP schema.",
-        outcome: "Accelerated ERP discovery and setup phase from days to seconds.",
+        description: "AI agent for building comprehensive presales environments. It automates the generation of complex demo data (e.g., Charts of Accounts, transactional history, master data) across multiple ERP industries.",
+        businessDescription: "Dramatically accelerates the presales cycle for complex software. Instead of manually populating demo environments, consultants can generate tailored, industry-specific datasets (like custom CoA or inventory structures) in seconds, improving demo quality and speed.",
+        technicalDescription: "Uses LLMs to architect domain-specific data structures and sequences. Integrates with database schemas (e.g., Oracle PL/SQL) to programmatically inject validated demo data while ensuring referential integrity and industry-appropriate semantics.",
+        outcome: "Reduced presales environment setup from days to seconds using AI-generated CoA and master data.",
         images: [
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop"
@@ -421,6 +422,7 @@ const DATA_AR: AppContent = {
   },
   projects: {
     title: "الابتكارات والمشاريع",
+    subtitle: "مشاريع مختارة تبرز حجم المؤسسات، الأتمتة، والعمق التقني.",
     outcomeLabel: "القيمة التجارية",
     viewDetailsLabel: "تفاصيل تعميقية",
     categories: {
@@ -436,7 +438,7 @@ const DATA_AR: AppContent = {
       // --- AI AGENTS ---
       {
         id: 'ai-1',
-        title: "FatooraX - معالج الفواتير الذكي",
+        title: "فاتورة إكس (FatooraX) - معالج الفواتير الذكي",
         category: ProjectCategory.AI_AGENTS,
         techStack: ["Computer Vision", "CrewAI", "Vector Search", "FastAPI"],
         description: "أداة ذكية تستخدم رؤية الحاسوب لاستخراج وتدقيق بيانات الفواتير الورقية.",
@@ -450,7 +452,7 @@ const DATA_AR: AppContent = {
       },
       {
         id: 'ai-7',
-        title: "Beneish M-Score AI",
+        title: "نموذج تقييم بينيش إم بالذكاء الصناعي (Beneish M-Score AI)",
         category: ProjectCategory.AI_AGENTS,
         techStack: ["Python", "Flet", "Pandas", "PDF Parsing"],
         description: "أداة جنائية مالية مدعومة بالذكاء الاصطناعي لكشف التلاعب المحتمل في الأرباح.",
@@ -464,13 +466,13 @@ const DATA_AR: AppContent = {
       },
       {
         id: 'ai-8',
-        title: "CoA-Gen Agent",
+        title: "توليد بيانات التجربة للمبيعات (Presales) بواسطة وكيل ذكاء اصطناعي",
         category: ProjectCategory.AI_AGENTS,
         techStack: ["FastAPI", "Oracle PL/SQL", "Gemini Flash"],
-        description: "وكيل ذكي ينشئ أدلة حسابات (CoA) مخصصة للصناعة فورياً.",
-        businessDescription: "يحدث ثورة في مرحلة مبيعات وتجهيز ERP. بدلاً من قضاء أيام في تكوين دليل الحسابات يدوياً، يمكن للاستشاريين توليد هيكل مخصص وثنائي اللغة في ثوانٍ، مما يسرع الجدول الزمني للتنفيذ.",
-        technicalDescription: "يستفيد من الذكاء الاصطناعي التوليدي لبناء هياكل مالية هرمية بناءً على نوع الصناعة. يتكامل مع Oracle PL/SQL للتحقق ورسم خريطة الدليل مباشرة داخل مخطط ERP.",
-        outcome: "اختصار مرحلة تجهيز ERP من أيام إلى ثوانٍ.",
+        description: "وكيل ذكي يقوم ببناء بيئات تجربة متكاملة للمبيعات. يؤتمت توليد المخططات والمحتوى التجريبي (مثل أدلة الحسابات CoA، البيانات التاريخية) لقطاعات الأعمال المختلفة.",
+        businessDescription: "يحدث ثورة في دورة ما قبل المبيعات. بدلاً من قضاء أيام في ملء بيئات التجربة يدوياً، يمكن للاستشاريين توليد بيانات مخصصة وفورية (مثل دليل الحسابات CoA أو هياكل المخزون)، مما يحسن جودة العروض التقديمية.",
+        technicalDescription: "يستخدم النماذج اللغوية (LLMs) لتصميم هياكل بيانات متخصصة. يتكامل مع قواعد البيانات لحقن البيانات والتحقق منها برمجياً مع ضمان سلامة العلاقات المنطقية وهيكلة البيانات.",
+        outcome: "اختصار وقت تجهيز بيئات عروض المبيعات من أيام إلى ثوانٍ باستخدام الذكاء الاصطناعي.",
         images: [
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop"
@@ -478,7 +480,7 @@ const DATA_AR: AppContent = {
       },
       {
         id: 'ai-6',
-        title: "AI Theme Manager",
+        title: "مدير سمات الذكاء الاصطناعي (AI Theme Manager)",
         category: ProjectCategory.AI_AGENTS,
         techStack: ["Python", "Flet", "Gemini 2.0", "LangChain"],
         description: "نظام تصميم ديناميكي مدعوم بالذكاء الاصطناعي لتكييف واجهة المستخدم.",

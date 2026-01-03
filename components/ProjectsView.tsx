@@ -214,7 +214,7 @@ export const ProjectsView: React.FC<{ content: AppContent['projects'] }> = ({ co
         <div>
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-textPrimary mb-2">{content.title}</h2>
           <p className="text-textSecondary text-sm md:text-base max-w-lg">
-            {content.items.find(i=>true)?.title ? "Selected works demonstrating enterprise scale, automation, and technical depth." : "Loading..."}
+            {content.subtitle}
           </p>
         </div>
         
