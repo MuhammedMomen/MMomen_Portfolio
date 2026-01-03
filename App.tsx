@@ -13,6 +13,7 @@ const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<ViewState>(ViewState.PROFILE);
   const [lang, setLang] = useState<Language>('en');
   const [theme, setTheme] = useState<Theme>('dark');
+  const scrollRef = React.useRef<HTMLDivElement>(null);
   
   const content = getContent(lang);
 
@@ -40,6 +41,13 @@ const App: React.FC = () => {
   const toggleTheme = () => setTheme(prev => prev === 'dark' ? 'light' : 'dark');
   const toggleLang = () => setLang(prev => prev === 'en' ? 'ar' : 'en');
 
+  // Auto-scroll to top on view change
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [currentView]);
+
   const renderView = () => {
     switch (currentView) {
       case ViewState.PROFILE:
@@ -56,7 +64,10 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-[100dvh] bg-background text-textPrimary font-sans overflow-hidden selection:bg-primary/30">
+    <div 
+      ref={scrollRef}
+      className="relative w-full h-[100dvh] bg-background text-textPrimary font-sans overflow-x-hidden overflow-y-auto selection:bg-primary/30 no-scrollbar scroll-smooth"
+    >
       
       {/* Background ambient gradient */}
       <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
@@ -85,7 +96,7 @@ const App: React.FC = () => {
       </div>
 
       {/* Main Content Area */}
-      <main className="w-full h-full pb-20 pt-16 sm:pt-12">
+      <main className="w-full min-h-screen pb-24 pt-16 sm:pt-12">
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={currentView + lang} // Remount on lang change to reset layout animations

@@ -88,7 +88,7 @@ const ProjectDetailsModal: React.FC<{
     >
       <motion.div
         layoutId={`project-container-${project.id}`}
-        className="w-full sm:max-w-2xl lg:max-w-6xl h-[90vh] sm:h-auto sm:max-h-[90vh] bg-surface border-t sm:border border-borderSubtle rounded-t-3xl sm:rounded-3xl p-6 lg:p-10 overflow-hidden shadow-2xl relative flex flex-col lg:flex-row lg:gap-10"
+        className="w-full sm:max-w-2xl lg:max-w-6xl h-[90vh] sm:h-auto sm:max-h-[90vh] bg-surface border-t sm:border border-borderSubtle rounded-t-3xl sm:rounded-3xl p-6 lg:p-10 overflow-y-auto sm:overflow-hidden shadow-2xl relative flex flex-col lg:flex-row lg:gap-10"
         onClick={(e) => e.stopPropagation()}
         transition={{ type: "spring", bounce: 0, duration: 0.4 }}
       >
@@ -114,7 +114,7 @@ const ProjectDetailsModal: React.FC<{
         </div>
 
         {/* Right Col: Content */}
-        <div className="flex flex-col gap-6 pb-20 lg:pb-0 lg:w-2/5 lg:h-full lg:overflow-y-auto no-scrollbar">
+        <div className="flex flex-col gap-6 pb-12 lg:pb-0 lg:w-2/5 lg:h-full lg:overflow-y-auto no-scrollbar">
            <div>
               <div className="flex lg:hidden flex-wrap gap-2 mb-4">
                 {project.techStack.map(tech => (

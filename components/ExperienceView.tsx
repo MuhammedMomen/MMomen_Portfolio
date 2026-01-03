@@ -81,7 +81,7 @@ export const ExperienceView: React.FC<{ content: AppContent['experience'] }> = (
 
   return (
     <motion.div 
-      className="h-full w-full flex flex-col justify-center relative"
+      className="min-h-full w-full flex flex-col justify-center relative py-10"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
