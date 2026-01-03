@@ -62,7 +62,11 @@ const ImageCarousel: React.FC<{ images: string[] }> = ({ images }) => {
 const ProjectDetailsModal: React.FC<{ 
   project: ProjectItem; 
   onClose: () => void;
-  labels: { outcome: string }
+  labels: { 
+    outcome: string;
+    technical: string;
+    business: string;
+  }
 }> = ({ project, onClose, labels }) => {
   const [mounted, setMounted] = useState(false);
   const [viewMode, setViewMode] = useState<'business' | 'technical'>('business');
@@ -125,18 +129,26 @@ const ProjectDetailsModal: React.FC<{
            </div>
            
            {/* Toggle Switch */}
-           <div className="flex bg-surface border border-borderSubtle rounded-full p-1 self-start">
+           <div className="flex bg-background rounded-lg p-1">
              <button
                onClick={() => setViewMode('business')}
-               className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${viewMode === 'business' ? 'bg-primary text-white shadow-sm' : 'text-textSecondary hover:text-textPrimary'}`}
+               className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all ${
+                 viewMode === 'business'
+                   ? 'bg-primary text-white shadow-sm'
+                   : 'text-textSecondary hover:text-textPrimary'
+               }`}
              >
-               Business View
+               {labels.business}
              </button>
              <button
                onClick={() => setViewMode('technical')}
-               className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${viewMode === 'technical' ? 'bg-primary text-white shadow-sm' : 'text-textSecondary hover:text-textPrimary'}`}
+               className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all ${
+                 viewMode === 'technical'
+                   ? 'bg-primary text-white shadow-sm'
+                   : 'text-textSecondary hover:text-textPrimary'
+               }`}
              >
-               Technical View
+               {labels.technical}
              </button>
            </div>
 
@@ -269,7 +281,11 @@ export const ProjectsView: React.FC<{ content: AppContent['projects'] }> = ({ co
           <ProjectDetailsModal 
             project={selectedProject} 
             onClose={() => setSelectedProject(null)} 
-            labels={{ outcome: content.outcomeLabel }}
+            labels={{ 
+              outcome: content.outcomeLabel,
+              technical: content.technicalLabel,
+              business: content.businessLabel
+            }}
           />
         )}
       </AnimatePresence>

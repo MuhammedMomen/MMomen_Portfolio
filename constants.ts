@@ -80,6 +80,8 @@ const DATA_EN: AppContent = {
   projects: {
     title: "Innovations & Projects",
     subtitle: "Selected works demonstrating enterprise scale, automation, and technical depth.",
+    technicalLabel: "Technical View",
+    businessLabel: "Business View",
     outcomeLabel: "Business Outcome",
     viewDetailsLabel: "Deep Dive",
     categories: {
@@ -211,10 +213,10 @@ const DATA_EN: AppContent = {
         id: 'prod-7',
         title: "FusionPOS AI",
         category: ProjectCategory.FULLSTACK,
-        techStack: ["Flet Desktop", "FastAPI", "FusionAI"],
+        techStack: ["Flet Mobile", "FastAPI", "FusionAI"],
         description: "Next-gen retail management system with AI-driven business intelligence.",
         businessDescription: "Empowers small businesses with enterprise-grade retail insights. Combines a robust Point of Sale system with AI that answers questions like 'What are my top selling items?' and predicts inventory needs.",
-        technicalDescription: "A pure Python full-stack application. Frontend built with Flet for cross-platform desktop deployment. Backend powered by FastAPI. 'FusionAI' engine uses simple forecasting models and natural language processing to query sales data.",
+        technicalDescription: "A pure Python full-stack application. Frontend built with Flet for cross-platform mobile deployment. Backend powered by FastAPI. 'FusionAI' engine uses simple forecasting models and natural language processing to query sales data.",
         outcome: "Empowered SMEs with enterprise-grade retail AI insights.",
         images: [
           "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=800&auto=format&fit=crop",
@@ -314,11 +316,26 @@ const DATA_EN: AppContent = {
         techStack: ["Flet", "SQLite", "Python Poetry"],
         description: "Local-first knowledge management application.",
         businessDescription: "Boosts personal productivity by organizing scattered digital resources (links, files, notes) into a single, searchable local database, free from browser clutter and cloud dependencies.",
-        technicalDescription: "Desktop app built with Flet and SQLite. Implements tagging, search indexing, and resource categorization in a private local file storage system.",
+        technicalDescription: "Mobile app built with Flet and SQLite. Implements tagging, search indexing, and resource categorization in a private local file storage system.",
         outcome: "Centralized personal digital knowledge base.",
         images: [
           "https://images.unsplash.com/photo-1481487484168-9b930d55206d?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      // --- ERP SECTION ---
+      {
+        id: 'erp-consult-1',
+        title: "ERP Implementation & Consultation",
+        category: ProjectCategory.ERP,
+        techStack: ["Oracle EBS", "Business Mapping", "Process Re-engineering"],
+        description: "Full-cycle ERP consulting from strategic planning to post-implementation support.",
+        businessDescription: "Providing expert guidance through the entire ERP lifecycle. This includes bridging the gap between business requirements and technical feasibility, ensuring that the system is not just implemented, but optimized for maximum operational efficiency and financial accuracy.",
+        technicalDescription: "End-to-end responsibility for ERP projects: leading presales discovery, mapping complex business processes to system capabilities, managing multi-departmental implementations, and providing high-level technical and financial support post-go-live.",
+        outcome: "Successfully led multiple multi-million dollar ERP implementations in various industries.",
+        images: [
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1554224155-169741427164?q=80&w=800&auto=format&fit=crop"
         ]
       },
     ]
@@ -423,6 +440,8 @@ const DATA_AR: AppContent = {
   projects: {
     title: "الابتكارات والمشاريع",
     subtitle: "مشاريع مختارة تبرز حجم المؤسسات، الأتمتة، والعمق التقني.",
+    technicalLabel: "عرض تقني",
+    businessLabel: "عرض الأعمال",
     outcomeLabel: "القيمة التجارية",
     viewDetailsLabel: "تفاصيل تعميقية",
     categories: {
@@ -523,7 +542,7 @@ const DATA_AR: AppContent = {
       // --- AI TOOLS ---
       {
         id: 'ai-11',
-        title: "Labels AI (للتوطين)",
+        title: "ترجمة واجهات المستخدم بالذكاء الصناعي (Labels AI)",
         category: ProjectCategory.AI_TOOLS,
         techStack: ["Python AST", "Gemini Pro", "Flet"],
         description: "أداة للمطورين لأتمتة استخراج وترجمة نصوص واجهات التطبيقات.",
@@ -554,10 +573,10 @@ const DATA_AR: AppContent = {
         id: 'prod-7',
         title: "FusionPOS AI",
         category: ProjectCategory.FULLSTACK,
-        techStack: ["Flet Desktop", "FastAPI", "FusionAI"],
+        techStack: ["Flet Mobile", "FastAPI", "FusionAI"],
         description: "نظام إدارة تجزئة من الجيل التالي مع ذكاء أعمال مدمج.",
         businessDescription: "يمكن الشركات الصغيرة من الحصول على رؤى تجارية متقدمة. يجمع بين نظام نقاط بيع قوي وذكاء اصطناعي يجيب على أسئلة مثل 'ما هي أكثر الأصناف مبيعاً؟' ويتنبأ باحتياجات المخزون.",
-        technicalDescription: "تطبيق Full-Stack بلغة Python بالكامل. الواجهة مبنية بـ Flet للعمل على سطح المكتب وعبر المنصات. الواجهة الخلفية (Backend) تعمل بـ FastAPI مع محرك ذكاء بسيط للتنبؤ ومعالجة اللغة.",
+        technicalDescription: "تطبيق Full-Stack بلغة Python بالكامل. الواجهة مبنية بـ Flet للعمل على الأجهزة المحمولة وعبر المنصات. الواجهة الخلفية (Backend) تعمل بـ FastAPI مع محرك ذكاء بسيط للتنبؤ ومعالجة اللغة.",
         outcome: "تمكين الشركات الصغيرة من رؤى ذكاء اصطناعي مؤسسية.",
         images: [
           "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=800&auto=format&fit=crop",
@@ -657,11 +676,26 @@ const DATA_AR: AppContent = {
         techStack: ["Flet", "SQLite", "Python Poetry"],
         description: "تطبيق إدارة معرفة يعمل محلياً.",
         businessDescription: "يعزز الإنتاجية الشخصية من خلال تنظيم الموارد الرقمية المشتتة (روابط، ملفات) في قاعدة بيانات محلية واحدة قابلة للبحث، بعيداً عن فوضى المتصفح والاعتماد على السحابة.",
-        technicalDescription: "تطبيق سطح مكتب مبني بـ Flet و SQLite. ينفذ التصنيف، وفهرسة البحث، وتنظيم الموارد في نظام تخزين ملفات محلي خاص.",
+        technicalDescription: "تطبيق أجهزة محمولة مبني بـ Flet و SQLite. ينفذ التصنيف، وفهرسة البحث، وتنظيم الموارد في نظام تخزين ملفات محلي خاص.",
         outcome: "إنشاء قاعدة معرفة رقمية شخصية مركزية.",
         images: [
           "https://images.unsplash.com/photo-1481487484168-9b930d55206d?q=80&w=800&auto=format&fit=crop",
           "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=800&auto=format&fit=crop"
+        ]
+      },
+      // --- ERP SECTION ---
+      {
+        id: 'erp-consult-1',
+        title: "استشارات وتنفيذ نظم ERP",
+        category: ProjectCategory.ERP,
+        techStack: ["Oracle EBS", "تصميم العمليات", "إعادة هندسة الأعمال"],
+        description: "استشارات ERP شاملة: من التخطيط الاستراتيجي إلى دعم ما بعد التنفيذ.",
+        businessDescription: "تقديم التوجيه الخبير خلال دورة حياة ERP بالكامل. يشمل ذلك سد الفجوة بين متطلبات الأعمال والإمكانيات التقنية، لنضمن ليس فقط تنفيذ النظام، بل تحسينه لتحقيق أقصى كفاءة تشغيلية ودقة مالية.",
+        technicalDescription: "مسؤولية كاملة عن مشاريع ERP: قيادة اكتشاف ما قبل البيع، تصميم عمليات الأعمال المعقدة، إدارة التنفيذ عبر الإدارات المختلفة، وتقديم دعم فني ومالي عالي المستوى بعد التشغيل.",
+        outcome: "قيادة ناجحة لعدة مشاريع تنفيذ ERP بملايين الدولارات في قطاعات متنوعة.",
+        images: [
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1554224155-169741427164?q=80&w=800&auto=format&fit=crop"
         ]
       },
     ]
