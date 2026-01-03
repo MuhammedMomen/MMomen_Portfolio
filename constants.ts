@@ -3,10 +3,10 @@ import { ProjectCategory, AppContent, Language } from './types';
 const DATA_EN: AppContent = {
   profile: {
     name: "Muhammed Momen",
-    role: "Lead ERP Financial Consultant & AI Architect",
+    role: "Lead ERP Financial Consultant & AI Strategist",
     tagline: "Merging Financial Expertise with Agentic AI & Python Automation.",
     valueProp: "Highly analytical and results-oriented professional with a strong background in financial analysis and a proven ability to leverage data and technology to solve complex business problems. Experienced in gathering and documenting requirements, optimizing processes, and facilitating communication between technical teams and business stakeholders. Adept at using data analysis techniques and tools, including Python and AI, to drive insights and inform strategic decisions.",
-    openToAdvisory: "OPEN TO ADVISORY",
+    openToAdvisory: "OPEN TO ADVISORY & HIRING",
     ctaExperience: "View Track Record",
     ctaProjects: "See Innovations",
     start: "Start",
@@ -363,10 +363,10 @@ const DATA_EN: AppContent = {
 const DATA_AR: AppContent = {
   profile: {
     name: "محمد مؤمن",
-    role: "استشاري أول نظم ERP ومهندس ذكاء اصطناعي",
+    role: "استشاري أول نظم ERP وخبير استراتيجي للذكاء الاصطناعي",
     tagline: "دمج الخبرة المالية مع الذكاء الاصطناعي والأتمتة.",
     valueProp: "محترف ذو عقلية تحليلية وخبرة واسعة في التحليل المالي، أمتلك القدرة على توظيف البيانات والتكنولوجيا لحل مشكلات الأعمال المعقدة. وسيط فعال بين الفرق التقنية والمالية، أقود تنفيذ أنظمة ERP وأبني وكلاء ذكاء اصطناعي لأتمتة المهام الصعبة.",
-    openToAdvisory: "متاح للاستشارات",
+    openToAdvisory: "متاح للاستشارات والتوظيف",
     ctaExperience: "مسار الخبرة",
     ctaProjects: "استكشف الابتكارات",
     start: "ابدأ",
