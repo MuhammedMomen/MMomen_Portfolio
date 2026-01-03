@@ -2,7 +2,7 @@
 <img width="1200" height="475" alt="Portfolio Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-<h1 align="center">Muhammed Momen | ERP Functional Consultant (Finance, Operation & SCM) & AI Strategist</h1>
+<h1 align="center">Muhammed Momen | ERP Functional Consultant (Finance & Operations) | Business Process & AI Solutions Strategist</h1>
 
 <p align="center">
   <strong>Merging Financial Expertise with Agentic AI & Python Automation</strong>
