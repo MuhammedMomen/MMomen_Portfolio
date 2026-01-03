@@ -440,8 +440,8 @@ const DATA_AR: AppContent = {
   projects: {
     title: "الابتكارات والمشاريع",
     subtitle: "مشاريع مختارة تبرز حجم المؤسسات، الأتمتة، والعمق التقني.",
-    technicalLabel: "عرض تقني",
-    businessLabel: "عرض الأعمال",
+    technicalLabel: "وصف تقني",
+    businessLabel: "وصف غير تقني",
     outcomeLabel: "القيمة التجارية",
     viewDetailsLabel: "تفاصيل تعميقية",
     categories: {
