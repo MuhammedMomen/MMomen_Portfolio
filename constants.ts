@@ -3,7 +3,7 @@ import { ProjectCategory, AppContent, Language } from './types';
 const DATA_EN: AppContent = {
   profile: {
     name: "Muhammed Momen",
-    role: "Lead ERP Financial Consultant & AI Strategist",
+    role: "ERP Functional Consultant (Finance, Operation & SCM) & AI Strategist",
     tagline: "Merging Financial Expertise with Agentic AI & Python Automation.",
     valueProp: "Highly analytical and results-oriented professional with a strong background in financial analysis and a proven ability to leverage data and technology to solve complex business problems. Experienced in gathering and documenting requirements, optimizing processes, and facilitating communication between technical teams and business stakeholders. Adept at using data analysis techniques and tools, including Python and AI, to drive insights and inform strategic decisions.",
     openToAdvisory: "OPEN TO ADVISORY & HIRING",
@@ -33,7 +33,7 @@ const DATA_EN: AppContent = {
     items: [
       {
         id: 'exp-1',
-        role: "Lead ERP Financial Consultant",
+        role: "ERP Functional Consultant (Finance, Operation & SCM)",
         company: "Ultimate Solutions",
         period: "Aug 2021 — Present",
         context: "Team Leadership & AI Innovation",
@@ -44,7 +44,7 @@ const DATA_EN: AppContent = {
       },
       {
         id: 'exp-2',
-        role: "ERP Senior Financial Consultant",
+        role: "Senior ERP Functional Consultant",
         company: "Ultimate Solutions",
         period: "Dec 2020 — Aug 2021",
         context: "System Localization & Quality Assurance",
@@ -363,7 +363,7 @@ const DATA_EN: AppContent = {
 const DATA_AR: AppContent = {
   profile: {
     name: "محمد مؤمن",
-    role: "استشاري أول نظم ERP وخبير استراتيجي للذكاء الاصطناعي",
+    role: "استشاري وظيفي لنظم ERP (المالية، العمليات، وسلاسل الإمداد) وخبير استراتيجي للذكاء الاصطناعي",
     tagline: "دمج الخبرة المالية مع الذكاء الاصطناعي والأتمتة.",
     valueProp: "محترف ذو عقلية تحليلية وخبرة واسعة في التحليل المالي، أمتلك القدرة على توظيف البيانات والتكنولوجيا لحل مشكلات الأعمال المعقدة. وسيط فعال بين الفرق التقنية والمالية، أقود تنفيذ أنظمة ERP وأبني وكلاء ذكاء اصطناعي لأتمتة المهام الصعبة.",
     openToAdvisory: "متاح للاستشارات والتوظيف",
@@ -393,7 +393,7 @@ const DATA_AR: AppContent = {
     items: [
       {
         id: 'exp-1',
-        role: "استشاري أول مالي لنظم ERP",
+        role: "استشاري وظيفي لنظم ERP (المالية، العمليات، وسلاسل الإمداد)",
         company: "Ultimate Solutions",
         period: "أغسطس 2021 — الآن",
         context: "القيادة والابتكار بالذكاء الاصطناعي",
@@ -404,7 +404,7 @@ const DATA_AR: AppContent = {
       },
       {
         id: 'exp-2',
-        role: "استشاري مالي لنظم ERP",
+        role: "استشاري وظيفي لنظم ERP (المالية والعمليات)",
         company: "Ultimate Solutions",
         period: "ديسمبر 2020 — أغسطس 2021",
         context: "توطين النظم وضمان الجودة",
